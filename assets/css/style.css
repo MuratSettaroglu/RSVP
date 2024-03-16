@@ -283,6 +283,17 @@ h6 {
   position: relative;
 }
 
+.us-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+}
+
+
 @media (min-width: 992px) {
   #hero {
     padding-left: 160px;
