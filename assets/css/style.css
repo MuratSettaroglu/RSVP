@@ -10,12 +10,15 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Arapey', serif;
   color: #272829;
+  background-image: url(../img/bg1.png);
+  background-repeat: repeat;
+
 }
 
 a {
-  color: #0563bb;
+  color: #a52822;
   text-decoration: none;
 }
 
@@ -30,7 +33,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Arapey', serif;
+  font-size: 36px;
 }
 
 /*--------------------------------------------------------------
@@ -43,7 +47,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0563bb;
+  background: #a52822;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -85,7 +89,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #0563bb;
+  border: 6px solid #a52822;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -168,13 +172,13 @@ h6 {
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #45505b;
+  color: #fece57;
   padding: 10px 18px;
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
-  background: #f2f3f5;
+  background: #a52822;
   height: 56px;
   width: 100%;
   overflow: hidden;
@@ -189,7 +193,7 @@ h6 {
 .nav-menu a span,
 .nav-menu a:focus span {
   padding: 0 5px 0 7px;
-  color: #45505b;
+  color: #fece57;
 }
 
 @media (min-width: 992px) {
@@ -211,7 +215,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
   color: #fff;
-  background: #0563bb;
+  background: #a52822;
 }
 
 .nav-menu a:hover span,
@@ -252,7 +256,7 @@ h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #45505b;
+  color: #fece57;
 }
 
 .mobile-nav-active {
@@ -265,7 +269,7 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
   color: #fff;
-  background-color: #0563bb;
+  background-color: #a52822;
 }
 
 /*--------------------------------------------------------------
@@ -285,33 +289,24 @@ h6 {
   }
 }
 
-#hero:before {
-  content: "";
-  background: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 
 #hero h1 {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: #fece57;
 }
 
 #hero p {
-  color: #45505b;
+  color: #fece57;
   margin: 15px 0 0 0;
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-size: 46px;
+  font-family: 'Arapey', serif;
 }
 
 #hero p span {
-  color: #0563bb;
+  color: #a52822;
   letter-spacing: 1px;
 }
 
@@ -322,14 +317,14 @@ h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: #fece57;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-  color: #0563bb;
+  color: #a52822;
 }
 
 @media (max-width: 992px) {
@@ -369,7 +364,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #45505b;
+  color: #fece57;
 }
 
 .section-title h2::before {
@@ -389,13 +384,14 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: #a52822;
   bottom: 0;
   left: calc(50% - 20px);
 }
 
 .section-title p {
   margin-bottom: 0;
+  font-size: 22px;
 }
 
 /*--------------------------------------------------------------
@@ -425,7 +421,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #0563bb;
+  color: #a52822;
   line-height: 0;
 }
 
@@ -451,7 +447,7 @@ section {
   left: 50%;
   transform: translateX(-50%);
   font-size: 24px;
-  background: #0563bb;
+  background: #a52822;
   color: #fff;
   border-radius: 50px;
   display: inline-flex;
@@ -471,8 +467,8 @@ section {
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+  font-family: 'Arapey', serif;
+  font-size: 24px;
 }
 
 /*--------------------------------------------------------------
@@ -485,32 +481,6 @@ section {
   border-radius: 0;
 }
 
-.skills .progress .skill {
-  padding: 10px 0;
-  margin: 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  color: #45505b;
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #0563bb;
-}
-
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -519,13 +489,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: #fece57;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #0563bb;
+  border-left: 2px solid #a52822;
   position: relative;
 }
 
@@ -534,8 +504,8 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #0563bb;
+  font-family: 'Arapey', serif;
+  color: #a52822;
   margin-bottom: 10px;
 }
 
@@ -569,7 +539,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
+  border: 2px solid #a52822;
 }
 
 /*--------------------------------------------------------------
@@ -604,7 +574,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #0563bb;
+  color: #a52822;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -617,19 +587,6 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
-}
-
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 30px;
-  bottom: 30px;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -678,12 +635,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #45505b;
+  color: #fece57;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #45505b;
+  color: #fece57;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
@@ -696,7 +653,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
+  color: #fece57;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
@@ -750,11 +707,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid #a52822;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: #a52822;
 }
 
 .portfolio-details .portfolio-info {
@@ -785,7 +742,7 @@ section {
 }
 
 .portfolio-details .portfolio-description h2 {
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -840,13 +797,13 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #45505b;
+  color: #fece57;
   transition: ease-in-out 0.3s;
 }
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 25px;
   margin-bottom: 0;
 }
 
@@ -997,11 +954,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0563bb;
+  border: 1px solid #a52822;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0563bb;
+  background-color: #a52822;
 }
 
 @media (min-width: 992px) {
@@ -1020,7 +977,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #0563bb;
+  color: #a52822;
   float: left;
   width: 44px;
   height: 44px;
@@ -1037,7 +994,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #45505b;
+  color: #fece57;
 }
 
 .contact .info p {
@@ -1055,7 +1012,7 @@ section {
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #0563bb;
+  background: #a52822;
   color: #fff;
 }
 
@@ -1126,7 +1083,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: #a52822;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1153,7 +1110,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #f7f8f9;
-  color: #45505b;
+  color: #fece57;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1163,7 +1120,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   position: relative;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Arapey', serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
@@ -1182,7 +1139,7 @@ section {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #0563bb;
+  background: #a52822;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1206,4 +1163,74 @@ section {
 
 #footer .credits {
   font-size: 13px;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  width: 100px;
+  color: #fece57;
+  background: #a52822;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  left: 42%;
+  top: 30%;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #a52822;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
