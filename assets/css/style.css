@@ -280,12 +280,12 @@ h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top right no-repeat;
   background-size: cover;
-  position: relative;
+  position: right;
 }
 
 .us-image {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 70%;
@@ -296,15 +296,13 @@ h6 {
 /* Media query for screens smaller than 768px (typical mobile devices) */
 @media (max-width: 600px) {
   #hero {
-    background-position: top right; /* Center the background image horizontally and vertically */
+    background-position: center center; /* Center the background image horizontally and vertically */
   }
 
   .us-image {
     max-width: 90%; /* Adjust the maximum width of the image for better visibility on smaller screens */
-    position: center;
   }
 }
-
 
 #hero h1 {
   margin: 0;
